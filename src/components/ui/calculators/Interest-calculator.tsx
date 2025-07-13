@@ -25,7 +25,7 @@ export default function InterestCalculator() {
                 <span className="flex justify-between gap-2">
                     <label>Term (years)</label>
                     <input
-                        className="border rounded-sm p-1"
+                        className="w-3/6 border rounded-sm p-1"
                         type="number"
                         value={term}
                         onChange={(e) => setTerm(Number(e.target.value))}
@@ -34,7 +34,7 @@ export default function InterestCalculator() {
                 <span className="flex justify-between gap-2">
                     <label>Amount ($)</label>
                     <input
-                        className="border rounded-sm p-1"
+                        className=" w-3/6 border rounded-sm p-1"
                         type="number"
                         value={principal}
                         onChange={(e) => setPrincipal(Number(e.target.value))}
@@ -43,7 +43,7 @@ export default function InterestCalculator() {
                 <span className="flex justify-between gap-2">
                     <label>Interest Rate (%)</label>
                     <input
-                        className="border rounded-sm p-1 "
+                        className=" w-3/6 border rounded-sm p-1 "
                         type="number"
                         value={interestRate}
                         onChange={(e) => setInterestRate(Number(e.target.value))}
@@ -52,15 +52,15 @@ export default function InterestCalculator() {
                 <span className="flex justify-between gap-2">
                     <label>Compounds per year</label>
                     <input
-                        className="border rounded-sm p-1"
+                        className=" w-3/6 border rounded-sm p-1"
                         type="number"
                         value={compoundsPerYear}
                         onChange={(e) => setCompoundsPerYear(Number(e.target.value))}
                     />
                 </span>
                 <span className="flex justify-between gap-2">
-                    <label>Total : $</label>
-                    <label>{total.toLocaleString('en-US', { maximumFractionDigits: 0 })}</label>
+                    <label>Total : </label>
+                    <label>${total.toLocaleString('en-US', { maximumFractionDigits: 0 })}</label>
                 </span>
             </div>
         </div>
