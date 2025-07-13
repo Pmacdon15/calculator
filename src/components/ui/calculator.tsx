@@ -17,6 +17,7 @@ export default function Calculator() {
                 setInput(result.toString());
                 setTotal(result.toString());
             } catch (error) {
+                console.log("Error: ", error)
                 setInput("Error");
             }
             return
@@ -43,6 +44,7 @@ export default function Calculator() {
             try {
                 setTotal(eval(newInput).toString());
             } catch (error) {
+                console.log("Error: ", error)
                 setTotal("")
             }
         }
