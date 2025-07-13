@@ -27,6 +27,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <div className={`bg-[var(--maincolor)] p-4 rounded-sm shadow-2xl`}>
+            Pat's Online Calculator
+          </div>
+        </header>
         {children}
       </body>
     </html>
