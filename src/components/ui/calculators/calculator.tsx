@@ -28,6 +28,7 @@ export default function Calculator() {
         } else if (strValue === "Del") {
             const result = input.slice(0, -1);
             setInput(result || "_");
+            setTotal(result || "_");
             return;
         }
 
