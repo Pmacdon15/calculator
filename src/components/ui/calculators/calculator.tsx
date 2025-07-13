@@ -1,7 +1,7 @@
 'use client'
 import { useCursorBlink } from "@/app/hoohks/hooks";
 import { useState } from "react";
-import CalculatorButtons from "./buttons/calculator-buttons";
+import CalculatorButtons from "../buttons/calculator-buttons";
 
 export default function Calculator() {
     const [input, setInput] = useState("_");
