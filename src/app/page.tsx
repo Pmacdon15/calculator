@@ -1,4 +1,3 @@
-import CalculatorButtons from "@/components/ui/buttons/calculator-buttons";
 import Calculator from "@/components/ui/calculator";
 
 export default function Home() {
