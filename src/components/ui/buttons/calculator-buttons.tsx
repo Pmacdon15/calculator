@@ -7,7 +7,7 @@ export default function CalculatorButtons({ value, onCalculatorButtonPress }: { 
   if(value==='Del') return(
    
      <button
-      className="flex text-center justify-center rounded-sm border p-2"
+      className="flex text-center items-center justify-center rounded-sm border p-2"
       onClick={() => onCalculatorButtonPress(value)}
     > <FontAwesomeIcon icon={faDeleteLeft} /></button>
   )
