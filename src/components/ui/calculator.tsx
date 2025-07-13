@@ -50,7 +50,7 @@ export default function Calculator() {
         }
     }
     return (
-        <div className={`bg-[var(--maincolor)] p-4 rounded-sm shadow-2xl`}>
+        <div className={`bg-[var(--maincolor)] p-4 rounded-sm shadow-2xl `}>
             <div className="text-right text-lg rounded-sm flex flex-col mb-4 border w-full justify-end pr-2">
                 <p>
                     {input === "_" && cursorVisible ? "|" : input}
